@@ -22,7 +22,6 @@ function Navbar() {
                         <li><Link to="/" className={"nav-link px-2 link-"+(url === "/" ?"secondary" : "light")}>Home</Link></li>
                         <li><Link to="/products" className={"nav-link px-2 link-"+(url === "/products" ?"secondary" : "light")}>Products</Link></li>
                         <li><Link to="/about" className={"nav-link px-2 link-"+(url === "/about" ?"secondary" : "light")}>About</Link></li>
-                        <li><Link to="/contact" className={"nav-link px-2 link-"+(url === "/contact" ?"secondary" : "light")}>Contact</Link></li>
                     </ul>
 
                     <div className="col-3 text-end">

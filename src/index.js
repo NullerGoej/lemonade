@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import Products from './component/Products';
 import About from './component/About';
-import Contact from './component/Contact';
 import Cart from './component/Cart';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
@@ -21,7 +20,6 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
