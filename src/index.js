@@ -4,6 +4,8 @@ import App from './App';
 import Products from './component/Products';
 import About from './component/About';
 import Cart from './component/Cart';
+import NotFound from './component/NotFound';
+import Product from './component/Product';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -24,6 +26,8 @@ root.render(
         <Route path="/products" element={<Products />} />
         <Route path="/about" element={<About />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/product/:id" element={<Product />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
     </Provider>
