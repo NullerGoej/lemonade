@@ -18,7 +18,7 @@ function Navbar() {
             <div className="container">
                 <div className="row">
                     <Link to="/" className="d-flex align-items-center col-3 mb-2 mb-md-0 text-white text-decoration-none link-light">
-                        <img className="bi me-2" height="32" src="lemon.svg.png" alt="Lemon"></img>
+                        <img className="bi me-2" height="32" src="../lemon.svg.png" alt="Lemon"></img>
                         <span className="fs-4 lemon">Moe's Lemons</span>
                     </Link>
 
