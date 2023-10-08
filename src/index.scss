@@ -1,0 +1,56 @@
+$primary: #FEAD49;
+
+@import "~bootstrap/scss/bootstrap";
+
+$enable-shadows: true;
+
+@font-face {
+    font-family: 'Lemon';
+    src: url('../public/lemon.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Lemon-Light';
+    src: url('../public/lemon-lighti.otf') format('opentype');
+}
+
+body {
+    font-family: 'Lemon-Light', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .lemon {
+    font-family: 'Lemon', sans-serif !important;
+}
+
+.hero-image {
+    background-image: url('../public/pattern.png');
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.link-light:hover {
+    color: #FEAD49 !important;
+}
+
+.vignette {
+    position: relative;
+}
+
+.vignette::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.7));
+}
+
+.vignette > * {
+    position: relative;
+    z-index: 1;
+}
