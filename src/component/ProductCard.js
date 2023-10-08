@@ -6,7 +6,7 @@ function ProductCard(props) {
     const [product, setProduct] = useState(null);
 
     useEffect(() => {
-        fetch(`http://own.moedekjaer.dk:8787/product/${productID}`)
+        fetch(`http://moedekjaer.dk:8787/product/${productID}`)
             .then(response => response.json())
             .then(data => setProduct(data))
             .catch(error => console.error(error));
