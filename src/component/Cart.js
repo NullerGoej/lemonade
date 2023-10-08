@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from './Navbar';
 
-function Contact() {
+function Cart() {
   return (
-    <div className="Contact">
+    <div className="Cart">
       <Navbar />
     </div>
   );
 }
 
-export default Contact;
+export default Cart;

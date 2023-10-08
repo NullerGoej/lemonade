@@ -14,7 +14,7 @@ $enable-shadows: true;
     src: url('../public/lemon-lighti.otf') format('opentype');
 }
 
-body {
+body, .lemon-light {
     font-family: 'Lemon-Light', sans-serif !important;
 }
 
