@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import './Product.scss';
 import { useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItemToCart } from '../features/cart/cartSlice';
@@ -25,7 +26,7 @@ function Product() {
     }
 
     return (
-        <div className="Products">
+        <div className="Product">
             <Navbar />
             <main className="ppb-5 py-5 my-5">
                 <div className="container">

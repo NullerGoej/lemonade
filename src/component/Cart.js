@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import CartProduct from './CartProduct';
 import { useSelector } from 'react-redux';
+import Loading from './Loading';
 
 
 function Cart() {
@@ -19,9 +20,7 @@ function Cart() {
   }, []);
 
   if (!products) {
-    return (<div className="col-md-8">
-      <div>Loading...</div>
-    </div>);
+    return (<Loading />);
   }
 
 
@@ -41,6 +40,7 @@ function Cart() {
               {items.length === 0 && <div className="alert alert-info">Your cart is empty</div>}
               {items.map((item) => (
                 <CartProduct key={item} product={item} />
+                
               ))}
             </div>
             <div className="col-md-4">
