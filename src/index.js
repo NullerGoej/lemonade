@@ -9,7 +9,6 @@ import Product from './component/Product';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import "https://kit.fontawesome.com/6c6b04d9b0.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from './app/store'
 import { Provider } from 'react-redux'
